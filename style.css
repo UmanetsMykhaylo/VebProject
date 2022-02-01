@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:ital@1&family=Work+Sans:ital,wght@0,500;1,400&display=swap');
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,53,121,1) 0%, rgba(9,53,121,0) 0%, rgba(0,212,255,1) 90%);
+}
+
+form {
+    margin: 0;
+}
+
+.form-wrapper{
+    position: absolute;
+    top: 20px;
+    width: 380px;
+    height: 131px;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #ccc;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.image-wrapper {
+    top: 36px;
+    left: 575px;
+    max-width: 1050px;
+    position: absolute;
+    display: flex;
+}
+
+.image-wrapper__my-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+#uploadForm {
+    margin-bottom: 30px;
+}
+
+#downloadForm {
+    margin-bottom: 20px;
+}
+
+.form__submit-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color :#fff ;
+    background-color: #0071f0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form__submit-btn:hover{
+    opacity: 0.75;
+}
+
+.notify-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.form__sample-file{
+    margin-right: 32px;
+    width: 58%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: transparent; 
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-wrapper__upload-file {
+    display: none;
+}
+
+#uploadForm {
+    display: flex;
+}
+
+.input-wrapper {
+    width: 54%;
+    padding: 10px;
+    background: #0071f0;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 33px;
+}
+
+.input-wrapper__title-file {
+    font-size: 14px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.progress-download {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    padding: 0 5px;
+    display: none;
+    height: 5px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.progress-upload {
+    background: rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    padding: 0 5px;
+    display: none;
+    height: 25px;
+    width: 300px;
+    text-align: center;
+}
+
+.progress-download__value {
+    text-align: center;
+    box-shadow: 0 10px 40px -10px rgb(0, 0, 0);
+    border-radius: 100px;
+    background-color: #0071f0;
+    height: 3px;
+    width: 0;
+}
+
+.progress-upload__value {
+    text-align: center;
+    box-shadow: 0 10px 40px -10px rgb(0, 0, 0);
+    border-radius: 100px;
+    background-color: #0071f0;
+    height: 20px;
+    width: 0;
+}
+
+.item__btn-close {
+   cursor: pointer; 
+}
+
+.item__btn-close .close:hover {
+    opacity: 0.75;
+}
+
+.list-wrapper {
+    position: absolute;
+    top: 240px;
+    border-radius: 15px;
+    width: 450px;
+    height: 507px;
+    background-color: #0071f0;
+    overflow: scroll;
+}
+
+.list {
+    padding: 15px;
+}
+
+.list-title {
+    text-align: center;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 23px;
+}
+
+.item__name {
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.item__name:hover {
+    opacity: 0.75;
+}
+
+.list-body {
+    padding:0;
+    list-style: none;
+}
+
+.list-body .list-body__item{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    align-items: center;
+}
+
+.toast {
+    width: 100%;
+}
+
+.toast-container{
+    display: none;
+    width: 250px;
+    border-radius: 8px;
+}
+.toast-header {
+    border-bottom: 1px solid rgb(107, 100, 100);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.toast-title {
+    font-size: 22px;
+}
+
+.toast-body {
+    padding: 5px;
+    margin: 0;
+    font-size: 16px;
+}
